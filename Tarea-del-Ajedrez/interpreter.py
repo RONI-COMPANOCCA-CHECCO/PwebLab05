@@ -28,5 +28,3 @@ def draw(picture):
         pygame.quit()
         #sys.exit()
     pygame.display.update()
-
-
