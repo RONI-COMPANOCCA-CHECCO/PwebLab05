@@ -3,12 +3,9 @@ from colors import *
 
 class Picture:
     def __init__(self, img):
-        if isinstance(img, str):
-            self.img = img.split('\n')
-        elif isinstance(img, list) and all(isinstance(row, str) for row in img):
-            self.img = img
-        else:
-            raise ValueError("img must be a string or a list of strings")
+        self.img = img
+        self.width = len(img[0])
+        self.height = len(img)
 
     def __eq__(self, other):
         return self.img == other.img
@@ -66,3 +63,16 @@ class Picture:
         o antihorario"""
         rotated = list(zip(*self.img[::-1]))
         return Picture([''.join(row) for row in rotated])
+    
+    def superimpose(self, other):
+        new_img = []
+        for row_self, row_other in zip(self.img, other.img):
+            new_row = ""
+            for char_self, char_other in zip(row_self, row_other):
+                new_row += char_self if char_self != " " else char_other
+            new_img.append(new_row)
+        return Picture(new_img)
+    
+    def crop(self, x, y, width, height):
+        cropped_img = [row[x:x + width] for row in self.img[y:y + height]]
+        return Picture(cropped_img)
