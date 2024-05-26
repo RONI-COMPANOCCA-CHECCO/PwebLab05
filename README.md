@@ -70,7 +70,7 @@
 
 [![Texto alternativo](https://fips.unsa.edu.pe/ingenieriadesistemas/wp-content/uploads/sites/2/2017/10/front_galeria_epis_acreditada_ABET_01.jpg)](https://www.youtube.com/watch?v=8OSvp_FajWE)
 
-## <span style="font-family: Arial;">JavaScript es un lenguaje de programación de alto nivel, interpretado en tiempo de ejecución por los navegadores web, que se utiliza para agregar interactividad a páginas web mediante la manipulación del DOM y el manejo de eventos. Es un lenguaje orientado a objetos basado en prototipos, lo que significa que las estructuras de datos y las funciones son objetos de primera clase y pueden ser modificadas y extendidas. JavaScript es un componente esencial del desarrollo web moderno, utilizado tanto en el frontend como en el backend con Node.js, y es compatible con una amplia gama de tecnologías y frameworks.</span>
+## <span style="font-family: Arial;">Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. </span>
 
 </div>
 
